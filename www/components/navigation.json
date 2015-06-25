@@ -1,8 +1,8 @@
 {
     "menuElements": [
         {
-            "title": "blog",
-            "textualId": "blog",
+            "title": "résoudoir",
+            "textualId": "resoudoir",
             "active": true
         },
         {
@@ -13,7 +13,7 @@
         {
             "title": "portfolio",
             "textualId": "portfolio",
-            "active": true
+            "active": false
         },
         {
             "title": "pattern library",

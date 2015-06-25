@@ -16,8 +16,8 @@
             }).when('/', {
                 redirectTo:'/alesiom'
             })
-            .when('/blog', {
-                templateUrl:'pages/blog/blog.tpl.html'
+            .when('/resoudoir', {
+                templateUrl:'pages/blog/resoudoir.tpl.html'
             })
             .when('/patternLibrary', {
                 templateUrl:'pages/patternLibrary/patternLibrary.tpl.html'

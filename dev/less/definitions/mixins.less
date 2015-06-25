@@ -2,24 +2,25 @@
 // I would encourage to use 1 for underline, and 0 for no underline
 .underline(@tickness, @bgColor) {
   text-decoration: none;
-  box-shadow: inset 0 -2*@tickness*@unitLine 0 @bgColor, inset 0 -3*@tickness*@unitLine 0;
-  text-shadow:  -1px 0 @bgColor, 0 1px @bgColor,
-  1px 0 @bgColor, 0 -1px @bgColor;
+//  box-shadow: inset 0 -2*@tickness*@unitLine 0 @bgColor, inset 0 -3*@tickness*@unitLine 0;
+//  text-shadow:  -1px 0 @bgColor, 0 1px @bgColor,
+//  1px 0 @bgColor, 0 -1px @bgColor;
   // TODO ensure on left and right there is some white, but not much below
 //  vertical-align: baseline;
 
-//  &:after {
-//    content: '';
-//
-//    width: 100%;
-//    position: absolute;
-//    left: 0;
-//    bottom: @unitSpacing;
-//
-//    border-width: 0 0 @tickness*@unitLine;
-//    border-style: solid;
-//    white-space: nowrap;
-//  }
+  &:after {
+    content: '';
+
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: @unitSpacing;
+
+    border-width: 0 0 @tickness*@unitLine;
+    border-style: solid;
+    white-space: nowrap;
+  }
+
 }
 
 .roundCorners() {
