@@ -1,0 +1,12 @@
+<svg viewBox="0 0 40 40" id="icon-calendar" class="hidden">
+      <use xlink:href="#calendar">
+    </svg>
+      <svg viewBox="0 40 40 40" id="icon-checkmark" class="hidden">
+      <use xlink:href="#checkmark">
+    </svg>
+        <svg viewBox="40 0 40 40" id="icon-burger" class="hidden">
+      <use xlink:href="#burger">
+    </svg>
+          <svg viewBox="40 40 40 40" id="icon-road" class="hidden">
+      <use xlink:href="#road">
+    </svg>

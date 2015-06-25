@@ -1,0 +1,25 @@
+button {
+  padding: 2*@unitSpacing;
+  margin: @unitSpacing 0;
+  background-color: @colorAction;
+  color: @colorActionInverse;
+  font-size: @fontMedium;
+  border: none;
+  cursor: pointer;
+  .roundCorners();
+
+  &:hover {
+    background-color: @colorActionHover;
+  }
+}
+
+.btn-secondary {
+  font-size: @fontSmall;
+  background-color: @colorActionSecondary;
+  color: @colorActionSecondaryInverse;
+
+  &:hover {
+    background-color: @colorActionSecondaryHover;
+    box-shadow: 0 0 0 @unitLine @colorActionSecondary inset;
+  }
+}

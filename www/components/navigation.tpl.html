@@ -1,0 +1,7 @@
+<nav class="main-nav" ng-controller="NavCtrl">
+    <ul>
+        <li ng-repeat="navElement in navigations" ng-click="goTo(navElement.textualId)"
+            ng-class="isActive('{{navElement.textualId}}')? 'active':''" ng-if="navElement.active === true"><span
+                class="is-a-link nav-link">{{navElement.title}}</span></li>
+    </ul>
+</nav>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="alesiom">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="alesiom - Alésio Margot">
+    <meta name="keywords"
+          content="Alésio, alesio, alesiom, lex, alexandre, margot, personal, cv, portfolio, portefolio">
+    <title>alesiom - Alésio Margot</title>
+
+    <script src="vendors/js/angular.min.js"></script>
+    <script src="vendors/js/angular-route.min.js"></script>
+
+    <script src="app/alesiom.js"></script>
+    <script src="components/NavCtrl.js"></script>
+
+    <!-- grid -->
+    <link href="vendors/css/unsemantic-grid-responsive-tablet-no-ie7.css" rel="stylesheet">
+
+    <link href="styling/css/style.css" rel="stylesheet">
+</head>
+<body>
+<!-- Include icons -->
+<div ng-include="'imgs/icons.svg'" class="hidden"></div>
+<div ng-include="'imgs/iconIds.svg'" class="hidden"></div>
+
+<!--NAVIGATION-->
+<div ng-include="'components/navigation.tpl.html'" class="main-nav-wrapper"></div>
+
+<!--CONTENT -->
+<div ng-view class="content">
+    <!-- page content -->
+</div>
+
+</body>
+</html>

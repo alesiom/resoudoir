@@ -1,0 +1,40 @@
+//Lobotomized Owl (read more on http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) * + *
+
+// Spacing:
+@unitSpacing: 0.25em;
+
+//navigation Layout
+@navHeightMobile: 4em;
+@navWidthTabletUp : 10em;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: @colorBackground;
+}
+
+body {
+  margin-bottom: @navHeightMobile + 1em;
+
+  @media @tabletUp {
+    margin-bottom: 1em;
+  }
+}
+
+.content {
+  @media @tabletUp {
+    margin-left: @navWidthTabletUp;
+  }
+}
+
+.small-block {
+  .small-block();
+}
+
+p, .block, .cite {
+  .block();
+}
+
+.large-block {
+  .large-block();
+}

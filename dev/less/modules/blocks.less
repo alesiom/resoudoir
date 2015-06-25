@@ -1,0 +1,36 @@
+.block-zebra:nth-child(2n) {
+  background-color: @colorSecondBackground;
+
+  a, .is-a-link {
+    cursor: pointer;
+    color: @colorLink;
+    position: relative;
+    .underline(1, @colorSecondBackground);
+
+    &:hover {
+      color: @colorLinkHover;
+    }
+
+    &:active {
+      color: @colorLinkActive;
+    }
+
+    &::selection {
+      background: @colorLink;
+      color: @colorBackground;
+    }
+  }
+
+  a.nav-link, .nav-link {
+    color: @colorNavigation;
+    .underline(0, @colorSecondBackground);
+
+    &:hover {
+      .underline(1, @colorSecondBackground);
+    }
+
+    &:active {
+      color: @colorLinkActive;
+    }
+  }
+}

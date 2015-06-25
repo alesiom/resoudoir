@@ -1,0 +1,81 @@
+//This is only to style the parts of the patternLibrary that should not be part of the project itself (e.g. listing the icons)
+
+//# ICONS
+
+@PL_colorDarkGray: rgb(80, 80, 80);
+
+.p-l-icons {
+  width: 100%;
+  vertical-align: top;
+}
+
+.p-l-icon {
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgb(220, 220, 220);
+  background-color: rgb(240, 240, 240);
+  border-radius: 2px;
+  display: inline-block;
+  margin: 20px 0 20px 20px;
+  padding: 0;
+  text-align: center;
+}
+
+.p-l-icon-details {
+  width: 90px;
+  height: 200px;
+  display: inline-block;
+  margin: 20px 0;
+  text-align: center;
+  padding: 0;
+
+  .p-l-icon {
+    width: 90px;
+    height: 95px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+
+    div {
+      margin: 0;
+      padding: 0;
+    }
+    span {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.p-l-icon-svg {
+  width: 140px;
+  height: 140px;
+  border: 3px solid rgb(150, 150, 150);
+  background-color: white;
+  margin: 10px auto 0 auto;
+  text-align: center;
+  fill: @PL_colorDarkGray;
+  color: @PL_colorDarkGray;
+}
+
+.p-l-icon-svg-elements, .p-l-icon-svg-trigger {
+  width: 40px;
+  height: 40px;
+}
+
+.p-l-icon-svg-elements {
+  fill: @PL_colorDarkGray;
+  color: transparent;
+}
+
+.p-l-icon-svg-trigger {
+  color: @PL_colorDarkGray;
+  fill: none;
+}
+
+.p-l-icon-name {
+  margin: 0 auto;
+  padding: 0;
+  color: @PL_colorDarkGray;
+  text-align: center;
+}

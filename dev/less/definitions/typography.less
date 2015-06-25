@@ -1,0 +1,117 @@
+// type faces:
+@font-face {
+  font-family: 'HindReg';
+  src: url('../../vendors/fonts/hind-regular-webfont.eot');
+  src: url('../../vendors/fonts/hind-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../../vendors/fonts/hind-regular-webfont.woff2') format('woff2'),
+  url('../../vendors/fonts/hind-regular-webfont.woff') format('woff'),
+  url('../../vendors/fonts/Hind-Regular.ttf') format('truetype'),
+  url('../../vendors/fonts/hind-regular-webfont.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'HindBold';
+  src: url('../../vendors/fonts/hind-bold-webfont.eot');
+  src: url('../../vendors/fonts/hind-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../../vendors/fonts/hind-bold-webfont.woff2') format('woff2'),
+  url('../../vendors/fonts/hind-bold-webfont.woff') format('woff'),
+  url('../../vendors/fonts/Hind-Bold.ttf') format('truetype'),
+  url('../../vendors/fonts/hind-bold-webfont.svg') format('svg');
+}
+
+@typeface: 'HindReg', Helvetica Neue, Helvetica, Arial, sans-serif;
+@typefaceBold: 'HindBold', Helvetica Neue, Helvetica, Arial, sans-serif;
+
+// font size:
+@fontLargest: 2.3em;
+@fontLarge: 1.5em;
+@fontMedium: 1.1em;
+@fontSmall: 0.9em;
+@fontSmallest: 0.7em;
+
+@unitLine: 0.1em;
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: @typeface;
+  color: @colorFont;
+  font-size: @fontMedium;
+}
+
+*::selection {
+  background: @colorSecondBackground;
+}
+
+body {
+  font-size: 110%;
+
+  @media @tabletUp {
+    font-size: 100%;
+
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+h3, h4, h5, h6 {
+  font-size: @fontMedium;
+}
+
+h1 {
+  font-size: @fontLargest;
+}
+
+h2 {
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: @fontLarge;
+}
+
+h1, h3, strong, b {
+  font-family: @typefaceBold;
+}
+
+a, .is-a-link {
+  cursor: pointer;
+  color: @colorLink;
+  position: relative;
+  .underline(1, @colorBackground);
+
+  &:hover {
+    color: @colorLinkHover;
+  }
+
+  &:active {
+    color: @colorLinkActive;
+  }
+
+  &::selection {
+    background: @colorLink;
+    color: @colorBackground;
+  }
+}
+
+a.nav-link, .nav-link {
+  color: @colorNavigation;
+  .underline(0, @colorBackground);
+
+  &:hover {
+    .underline(1, @colorBackground);
+  }
+
+  &:active {
+    color: @colorLinkActive;
+  }
+}
+
+.font-small {
+  font-size: @fontSmall;
+}
+
+.font-tiny {
+  font-size: @fontSmallest;
+}

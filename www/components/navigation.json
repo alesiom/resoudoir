@@ -1,0 +1,24 @@
+{
+    "menuElements": [
+        {
+            "title": "blog",
+            "textualId": "blog",
+            "active": true
+        },
+        {
+            "title": "alesiom",
+            "textualId": "alesiom",
+            "active": true
+        },
+        {
+            "title": "portfolio",
+            "textualId": "portfolio",
+            "active": true
+        },
+        {
+            "title": "pattern library",
+            "textualId": "patternLibrary",
+            "active": false
+        }
+    ]
+}

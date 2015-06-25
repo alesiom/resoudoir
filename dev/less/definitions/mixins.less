@@ -1,0 +1,65 @@
+// Fake underlining, where @tickness represents the 100% (/100) of the tickness. In general,
+// I would encourage to use 1 for underline, and 0 for no underline
+.underline(@tickness, @bgColor) {
+  text-decoration: none;
+  box-shadow: inset 0 -2*@tickness*@unitLine 0 @bgColor, inset 0 -3*@tickness*@unitLine 0;
+  text-shadow:  -1px 0 @bgColor, 0 1px @bgColor,
+  1px 0 @bgColor, 0 -1px @bgColor;
+  // TODO ensure on left and right there is some white, but not much below
+//  vertical-align: baseline;
+
+//  &:after {
+//    content: '';
+//
+//    width: 100%;
+//    position: absolute;
+//    left: 0;
+//    bottom: @unitSpacing;
+//
+//    border-width: 0 0 @tickness*@unitLine;
+//    border-style: solid;
+//    white-space: nowrap;
+//  }
+}
+
+.roundCorners() {
+  border-radius: @unitSpacing;
+}
+
+// spacing:
+.small-block() {
+  padding: @unitSpacing 0;
+  margin: 0;
+}
+
+.block() {
+  padding: 2*@unitSpacing 0;
+  margin: 0;
+}
+
+.large-block() {
+  padding: 3*@unitSpacing 0;
+  margin: 0;
+}
+
+// Z indexes.
+.z-front() {
+  z-index: 1;
+}
+
+.z-middle() {
+  z-index: 0;
+}
+
+.z-behind() {
+  z-index: -1;
+}
+
+.noTextSelection() {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
