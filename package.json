@@ -1,0 +1,21 @@
+{
+    "name": "alesiom",
+    "private": true,
+    "version": "0.0.1",
+    "dependencies": {},
+    "devDependencies": {
+        "less": "2.1.2",
+        "jshint": "2.5.11",
+        "karma": "0.12.30",
+        "karma-cli": "0.0.4",
+        "karma-mocha": "0.1.10",
+        "karma-junit-reporter": "0.2.2",
+        "karma-ng-html2js-preprocessor": "0.1.2",
+        "chai": "1.10.0",
+        "jsdoc": "3.3.0-alpha5",
+        "csslint": "0.10.0"
+    },
+    "scripts": {
+        "test": "bash node_modules/.bin/karma start buildtools/karma.conf.js"
+    }
+}
